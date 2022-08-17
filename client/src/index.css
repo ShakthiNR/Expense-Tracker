@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --color-yellow:#f9c74f;
+  --color-purple:#9d4edd;
+}
+
+.bg-yellow{
+  background-color: var(--color-yellow);
+}
+.bg-purple{
+  background-color: var(--color-purple);
+}
+
+.chart .title{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@layer components {
+  .form-input {
+    @apply mb-8 px-3 py-2 rounded w-full focus:outline-none focus:ring-1 ring-purple-400 mb-5;
+  }
+  .btn-submit {
+    @apply border  px-3 py-2 mb-4 rounded-md text-white  ;
+  }
+
+
+
+}
+
+
+
+
+
+.Toastify__toast-body {
+  font-size: 18px;
+}
+.button {
+  line-height: 12px;
+  margin-top: 12px;
+  margin-top: 12px;
+  margin-right: 132px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.Toastify__toast-container--top-right {
+  top: 15rem !important;
+}
+.Toastify__progress-bar {
+color: brown;
+background-color: red;
+}
+
+.removeBtn{
+  display: none;
+}
+.fixedNav {
+ 
+  position: sticky;
+  top: 0px;
+}
+.fa-google {
+  background: 
+    linear-gradient(to bottom left,transparent 49%,#fbbc05 50%) 0 25%/48% 40%,
+    linear-gradient(to top    left,transparent 49%,#fbbc05 50%) 0 75%/48% 40%,
+  
+    linear-gradient(-40deg ,transparent 53%,#ea4335 54%),
+    linear-gradient( 45deg ,transparent 46%,#4285f4 48%),
+    #34a853;
+  background-repeat:no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.card:hover{ 
+  box-shadow: 1px 8px 20px grey;
+ -webkit-transition:  box-shadow .6s ease-in;
+}
+
+
+
+
+
+.accordion {
+  max-width: 85%;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aeca;
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #39b9d2;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}
+
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .4s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#a855f7, #a855f7)
+}
+
+.link-underline:hover {
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  color:"#a855f7"
+  
+}
